@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/constant/color.dart';
 import 'package:flutter_application_1/constant/dimension.dart';
+import 'package:flutter_application_1/widget/app_column.dart';
 import 'package:flutter_application_1/widget/big_text.dart';
 import 'package:flutter_application_1/widget/icon_text.dart';
 import 'package:flutter_application_1/widget/small_text.dart';
@@ -117,7 +118,7 @@ class _MenuBodyPageState extends State<MenuBodyPage> {
                 children: [
                   Container(
                     height: Dimension.pageView120,
-                    width: 120,
+                    width: Dimension.width120,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(Dimension.radius15),
                       color: AppColor.button1,
@@ -130,7 +131,7 @@ class _MenuBodyPageState extends State<MenuBodyPage> {
                   Expanded(
                     child: Container(
                       height: Dimension.pageView100,
-                      width: 230,
+                      width: Dimension.width230,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.only(
                           topRight: Radius.circular(Dimension.radius15),
@@ -144,38 +145,8 @@ class _MenuBodyPageState extends State<MenuBodyPage> {
                           right: Dimension.width10,
                           top: Dimension.height10,
                         ),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            BigText(text: "Nutritious fruit meal in China"),
-                            SizedBox(
-                              height: Dimension.height10,
-                            ),
-                            SmallText(text: "With Chocolate Dip"),
-                            SizedBox(
-                              height: Dimension.height15,
-                            ),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                IconText(
-                                  icon: Icons.circle,
-                                  iconColor: AppColor.button2,
-                                  text: "Normal",
-                                ),
-                                IconText(
-                                  icon: Icons.location_on,
-                                  iconColor: AppColor.button1,
-                                  text: "1.2km",
-                                ),
-                                IconText(
-                                  icon: Icons.access_time_rounded,
-                                  iconColor: AppColor.mainColor,
-                                  text: "28min",
-                                ),
-                              ],
-                            )
-                          ],
+                        child: AppColumn(
+                          text: "Italian Dish",
                         ),
                       ),
                     ),

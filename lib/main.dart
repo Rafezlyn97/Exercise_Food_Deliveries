@@ -13,10 +13,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-        title: 'Flutter Demo',
-        theme: ThemeData(
-          scaffoldBackgroundColor: const Color(0xffFFF9F9),
-        ),
-        home: const MenuPage());
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        scaffoldBackgroundColor: const Color(0xffFFF9F9),
+      ),
+      home: const MenuDetail(),
+    );
   }
 }
