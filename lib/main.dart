@@ -17,6 +17,6 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           scaffoldBackgroundColor: const Color(0xffFFF9F9),
         ),
-        home: const MenuDetail());
+        home: const MenuPage());
   }
 }
