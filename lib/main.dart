@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/pages/home/menu_page.dart';
 import 'package:flutter_application_1/pages/menu_detail.dart';
+import 'package:flutter_application_1/pages/recommended_menu.dart';
 import 'package:get/get.dart';
 
 void main() {
@@ -15,9 +16,9 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        scaffoldBackgroundColor: const Color(0xffFFF9F9),
+        scaffoldBackgroundColor: Colors.white,
       ),
-      home: const MenuDetail(),
+      home: const RecommendedMenu(),
     );
   }
 }

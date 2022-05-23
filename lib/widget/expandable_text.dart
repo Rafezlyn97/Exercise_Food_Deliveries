@@ -14,7 +14,7 @@ class _ExpandableTextState extends State<ExpandableText> {
   late String firstHalf;
   late String secondHalf;
   bool hiddenText = true;
-  double textHeight = Dimension.screenheight / 7.81;
+  double textHeight = Dimension.screenheight / 6.79;
 
   @override
   void initState() {
@@ -33,35 +33,37 @@ class _ExpandableTextState extends State<ExpandableText> {
   Widget build(BuildContext context) {
     return Container(
       child: secondHalf.isEmpty
-          ? SmallText(text: firstHalf)
+          ? SmallText(
+              text: firstHalf,
+            )
           : Column(
-              children: <Widget>[
+              children: [
                 SmallText(
                   text: hiddenText
                       ? (firstHalf + "...")
                       : (firstHalf + secondHalf),
                 ),
                 InkWell(
-                  onTap: () {
+                  onTap: (() {
                     setState(() {
                       hiddenText = !hiddenText;
                     });
-                  },
+                  }),
                   child: Row(
                     children: [
                       SmallText(
-                        text: "Show More",
+                        text: hiddenText ? "Show More" : "Show Less",
                         color: AppColor.button1,
                       ),
                       Icon(
                         hiddenText
-                            ? Icons.arrow_drop_down
+                            ? Icons.arrow_drop_down_outlined
                             : Icons.arrow_drop_up,
                         color: AppColor.button1,
                       ),
                     ],
                   ),
-                ),
+                )
               ],
             ),
     );

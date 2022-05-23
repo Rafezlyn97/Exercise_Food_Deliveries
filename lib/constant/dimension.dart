@@ -10,6 +10,7 @@ class Dimension {
   static double pageViewTextContainer = screenheight / 6.79; // 781.1/115=6.79
   static double pageView120 = screenheight / 6.51;
   static double pageView100 = screenheight / 7.81;
+  static double pageView150 = screenheight / 5.21;
   static double pageView200 = screenheight / 3.91;
   static double pageView350 = screenheight / 2.23;
 
@@ -19,6 +20,7 @@ class Dimension {
   static double height20 = screenheight / 39.06;
   static double height30 = screenheight / 26.04;
   static double height45 = screenheight / 17.36;
+  static double height50 = screenheight / 15.62;
 
   //dynamic width
   static double width5 = screenheight / 156.22;
@@ -27,14 +29,17 @@ class Dimension {
   static double width20 = screenheight / 39.06;
   static double width30 = screenheight / 26.04;
   static double width45 = screenheight / 17.36;
+  static double width50 = screenheight / 15.62;
   static double width230 = screenheight / 3.40;
   static double width120 = screenheight / 6.51;
 
   //dynamic font size
   static double font12 = screenheight / 65.09;
+  static double font15 = screenheight / 52.07;
   static double font16 = screenheight / 48.82;
   static double font18 = screenheight / 43.40;
   static double font20 = screenheight / 39.06;
+  static double font26 = screenheight / 30.04;
 
   //dynamic radius size
   static double radius5 = screenheight / 156.22;
