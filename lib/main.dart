@@ -3,8 +3,11 @@ import 'package:flutter_application_1/pages/home/menu_page.dart';
 import 'package:flutter_application_1/pages/menu_detail.dart';
 import 'package:flutter_application_1/pages/recommended_menu.dart';
 import 'package:get/get.dart';
+import 'package:flutter_application_1/helper/dependencies.dart' as dep;
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await dep.init();
   runApp(const MyApp());
 }
 
