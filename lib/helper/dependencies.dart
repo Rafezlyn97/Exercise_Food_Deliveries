@@ -5,7 +5,8 @@ import 'package:get/get.dart';
 
 Future<void> init() async {
   //api_client
-  Get.lazyPut(() => ApiClient(appBaseUrl: "https://www.dbestech.com"));
+  Get.lazyPut(() =>
+      ApiClient(appBaseUrl: "https://628de0bb368687f3e70b131e.mockapi.io/"));
 
   //repository
   Get.lazyPut(() => PopularMenuRepo(apiClient: Get.find()));

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/controller/popular_menu_controller.dart';
 import 'package:flutter_application_1/pages/home/menu_page.dart';
 import 'package:flutter_application_1/pages/menu_detail.dart';
 import 'package:flutter_application_1/pages/recommended_menu.dart';
@@ -16,6 +17,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Get.find<PopularMenuController>().getPopularMenuList();
     return GetMaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
